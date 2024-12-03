@@ -100,7 +100,7 @@
       const doctorId = urlParams.get("doctorId");
 
       async function getCallInfo() {
-        const url = "http://localhost:5217/api/TokenCalls/call-info";
+        const url = "http://localhost:5217/api/TokenCalls/doctor-call";
         const requestBody = {
           callerID: customerId,
           calleeUserId: doctorId,
