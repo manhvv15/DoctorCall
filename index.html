@@ -50,7 +50,7 @@
         <div class="col-12">
           <div class="jumbotron">
             <div class="container">
-              <h2 id="calleeNameTitle">Video call with</h2>
+              <h2 id="calleeNameTitle">Video call G1 - HealthEA</h2>
 
               <div id="incoming-call-notice" style="display: none">
                 <div class="spinner-grow text-primary" role="status">
@@ -63,7 +63,7 @@
 
           <div id="video-container">
             <video id="localVideo" autoplay muted></video>
-            <video id="remoteVideo" autoplay style="height: 420px"></video>
+            <video id="remoteVideo" autoplay style="height: 480px"></video>
           </div>
         </div>
       </div>
@@ -101,7 +101,7 @@
       const doctorId = urlParams.get("doctorId");
 
       async function getCallInfo() {
-        const url = "http://160.25.233.36:5217/api/TokenCalls/doctor-call";
+        const url = "https://160.25.233.36:5217/api/TokenCalls/doctor-call";
         const requestBody = {
           callerID: customerId,
           calleeUserId: doctorId,
